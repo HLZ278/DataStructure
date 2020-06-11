@@ -16,7 +16,7 @@ import java.util.Stack;
  *	(3) 否则，将s1栈顶的运算符弹出并压入到s2中，再次转到(4.1)与s1中新的栈顶运算
  *	符相比较;
  *	5. 遇到括号时:
- *	(1) 如果是左括号“(”，则直接压入s1
+ *	(1)如果是左括号“(”，则直接压入s1
  *	(2) 如果是右括号“)”，则依次弹出s1栈顶的运算符，并压入s2,直到遇到左括号为
  *	止，此时将这一对括号丢弃
  *	6. 重复步骤2至5，直到表达式的最右边
@@ -25,7 +25,7 @@ import java.util.Stack;
  */
 public class 后缀表达式生成器 {
 	public static void main(String[] args) {
-		 String expString = "1+((2+3)*4)-5";
+		 String expString = "10+((20+30)*40)-50";
 		 List<String> s1 = toInfixExpressionList(expString);
 		 System.out.println(s1);
 		 List<String> s2 = parseSuffixExpressionList(s1);
