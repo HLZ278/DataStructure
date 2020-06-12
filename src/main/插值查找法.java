@@ -3,7 +3,7 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 
-//二分法的改进：插值查找算法：下标和数组都是升序排列的，
+//二分法的改进(但不一定会比二分查找好)：插值查找算法：下标和数组都是升序排列的，
 //用查找值和最小值之间的差来估计或者说准确定位查找值的相对位置
 //int mid= left+ (right- left) * (findVal- arr[left])/ (arr[right] - arr[left])
 
