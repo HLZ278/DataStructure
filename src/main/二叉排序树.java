@@ -132,10 +132,6 @@ class BinarySortTree{
 				int min = delRightTreeMin(target.right);
 				target.value = min;
 			}else {//删除只有一个子树节点
-				if (parent == null) {
-					root = null;
-					return;
-				}
 				if (target.left!=null) {
 					//如果target是parent的左子节点
 					if (parent.left.value == value) {
